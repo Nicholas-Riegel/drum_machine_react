@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import drumArray from './drumLists'
+import { useState, useEffect } from 'react'
 
-function App() {
+import DrumBox from './DrumBox'
+import Display from './Display'
+
+const App = () => {
+
+  const [note0, setNote0] = useState(null)
+
+  useEffect(() => {
+    window.addEventListener('keydown', e=>playSound(e))
+    return window.removeEventListener('keydown', e=>playSound(e))
+
+  }, [])
+
+  const playSound = (x) => {
+    const note1 = drumArray.find(y => y.keyCode === x.keyCode)
+    if (note1) {
+      setNote0(note1)
+      const sound0 = new Audio(note1.url)
+      sound0.play()
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="drum-machine">
+        <Display note0={note0}/>
+        <DrumBox
+          drumArray={drumArray}
+          playSound={playSound} />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
