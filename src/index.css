@@ -1,6 +1,16 @@
+body{
+    /* box-sizing: border-box; */
+    margin: 0;
+    /* padding: 0; */
+    /* background-color: rgb(42, 15, 70); */
+    background-image: url('./Assets/johnBonham.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .App{
     min-height: 100vh;
-    border: blue solid 1px;
+    /* border: blue solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,37 +18,61 @@
 }
 
 #drum-machine{
-    border: green solid 1px;
+    /* border: green solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 9rem;
+    min-height: 13rem;
     width: 80%;
+    /* box-sizing: border-box; */
+    /* margin: 0; */
+    padding: 1px;
 }
 
 #display{
-    border: orange solid 1px;
-    min-height: 2rem;
-    width: 40%;
-}
-
-#drum-box{
-    border: red solid 1px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.drum{
-    border: red solid 1px;
-    min-height: 4rem;
-    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: rgba(160, 48, 85, 0.233) solid 1px;
+    min-height: 4rem;
+    width: 40%;
+    color: rgb(8, 5, 190);
+    font-size: x-large;
+    padding: 0;
+    background-color: rgba(184, 148, 184, 0.747);
+    border-radius: .75rem;
+    box-shadow: 2px 2px 4px black;
 }
 
 #display p {
-    text-align: center;
+    margin: 0;
+}
+
+#drum-box{
+    /* border: red solid 1px; */
+    min-height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.drum{
+    border: rgba(160, 48, 85, 0.233) solid 1px;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8, 5, 190);
+    font-size: xx-large;
+    border-radius: .5rem;
+    background-color: rgba(184, 148, 184, 0.747);
+    box-shadow: 2px 2px 5px black;
+}
+
+.drum:hover{
+    height: 6rem;
+    width: 6rem;
 }

@@ -1,17 +1,16 @@
-import drumArray from './drumLists'
 import { useState, useEffect } from 'react'
 
-import DrumBox from './DrumBox'
-import Display from './Display'
+import drumArray from './Assets/drumLists'
+import DrumBox from './Components/DrumBox'
+import Display from './Components/Display'
 
 const App = () => {
 
   const [note0, setNote0] = useState(null)
 
   useEffect(() => {
-    window.addEventListener('keydown', e=>playSound(e))
-    return window.removeEventListener('keydown', e=>playSound(e))
-
+    document.addEventListener('keydown', e=>playSound(e))
+    return document.removeEventListener('keydown', e=>playSound(e))
   }, [])
 
   const playSound = (x) => {
@@ -29,7 +28,8 @@ const App = () => {
         <Display note0={note0}/>
         <DrumBox
           drumArray={drumArray}
-          playSound={playSound} />
+          playSound={playSound}
+        />
       </div>
     </div>
   )
