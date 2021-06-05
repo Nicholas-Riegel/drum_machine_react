@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react'
-
 import drumArray from './Assets/drumLists'
-// import DrumBox from './Components/DrumBox'
-// import Display from './Components/Display'
 
 const App = () => {
 
