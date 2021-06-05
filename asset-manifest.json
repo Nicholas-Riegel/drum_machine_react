@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.1064abea.chunk.css",
-    "main.js": "/static/js/main.2a4932a6.chunk.js",
-    "main.js.map": "/static/js/main.2a4932a6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5785ac14.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5785ac14.js.map",
-    "static/js/2.d8c0e1c1.chunk.js": "/static/js/2.d8c0e1c1.chunk.js",
-    "static/js/2.d8c0e1c1.chunk.js.map": "/static/js/2.d8c0e1c1.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.1064abea.chunk.css.map": "/static/css/main.1064abea.chunk.css.map",
-    "static/js/2.d8c0e1c1.chunk.js.LICENSE.txt": "/static/js/2.d8c0e1c1.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/johnBonham.c268fbd8.jpg"
+    "main.css": "/drum_machine_react/static/css/main.043cc68e.chunk.css",
+    "main.js": "/drum_machine_react/static/js/main.2a4932a6.chunk.js",
+    "main.js.map": "/drum_machine_react/static/js/main.2a4932a6.chunk.js.map",
+    "runtime-main.js": "/drum_machine_react/static/js/runtime-main.472b5f43.js",
+    "runtime-main.js.map": "/drum_machine_react/static/js/runtime-main.472b5f43.js.map",
+    "static/js/2.d8c0e1c1.chunk.js": "/drum_machine_react/static/js/2.d8c0e1c1.chunk.js",
+    "static/js/2.d8c0e1c1.chunk.js.map": "/drum_machine_react/static/js/2.d8c0e1c1.chunk.js.map",
+    "index.html": "/drum_machine_react/index.html",
+    "static/css/main.043cc68e.chunk.css.map": "/drum_machine_react/static/css/main.043cc68e.chunk.css.map",
+    "static/js/2.d8c0e1c1.chunk.js.LICENSE.txt": "/drum_machine_react/static/js/2.d8c0e1c1.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/drum_machine_react/static/media/johnBonham.c268fbd8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5785ac14.js",
+    "static/js/runtime-main.472b5f43.js",
     "static/js/2.d8c0e1c1.chunk.js",
-    "static/css/main.1064abea.chunk.css",
+    "static/css/main.043cc68e.chunk.css",
     "static/js/main.2a4932a6.chunk.js"
   ]
 }
